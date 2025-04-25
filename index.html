@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vive Talara: Descubre la capital regional del turismo de sol y playa en Perú. Explora negocios, eventos y experiencias únicas.">
+    <meta name="keywords" content="Talara, turismo, Vive Talara, Perú, playa, negocios, eventos">
+    <meta name="author" content="Manguito Perú">
+    <title>Vive Talara - El Sueño de Nuestra Tierra</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Loader -->
+    <div id="slider-loader" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div class="w-12 h-12 border-4 border-t-orange-500 border-gray-200 rounded-full animate-spin"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-20 bg-white shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-3xl font-['Lobster']">
+                        <span class="text-amber-400">Vive</span> <span class="text-orange-500">Talara</span>
+                    </h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-800 hover:text-orange-500 flex items-center hover:scale-105 transition-transform" aria-label="Ir a Inicio">
+                        <i class="fas fa-home text-orange-500 mr-1"></i> Inicio
+                    </a>
+                    <a href="negocios.html" class="text-gray-800 hover:text-orange-500 flex items-center hover:scale-105 transition-transform" aria-label="Ir a Negocios">
+                        <i class="fas fa-briefcase text-orange-500 mr-1"></i> Negocios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero con Slider -->
+    <section id="inicio" class="min-h-screen">
+        <div class="swiper w-full" role="region" aria-label="Carrusel principal de Vive Talara">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide relative">
+                    <img src="assets/img/slider/1.jpg" alt="Playa Máncora" class="w-full h-full object-cover">
+                    <div class="bg-gray-800 bg-opacity-70 w-full h-full flex flex-col justify-center items-center absolute inset-0">
+                        <h1 class="text-5xl md:text-7xl font-['Lobster'] text-amber-400 mb-4">Vive <span class="text-orange-500">Talara</span></h1>
+                        <p class="text-xl md:text-2xl text-white mb-6 text-center max-w-2xl">
+    ¡Pronto!  Sol, playa y turismo como nunca antes.
+</p>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="assets/img/slider/2.jpg" alt="Gastronomía Talara" class="w-full h-full object-cover">
+                    <div class="bg-gray-800 bg-opacity-70 w-full h-full flex flex-col justify-center items-center absolute inset-0">
+                        <h2 class="text-3xl md:text-5xl font-['Lobster'] text-amber-400 mb-4">Sabores de <span class="text-orange-500">Talara</span></h2>
+                        <p class="text-xl md:text-2xl text-white mb-6 text-center max-w-2xl">
+    ¡Muy pronto en <span class="text-amber-400 font-bold">Qué Hacer</span>! Descubre todo lo que <span class="font-bold">Vive Talara</span> tiene para ti.
+</p>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="assets/img/slider/3.jpg" alt="Eventos Talara" class="w-full h-full object-cover">
+                    <div class="bg-gray-800 bg-opacity-70 w-full h-full flex flex-col justify-center items-center absolute inset-0">
+                        <h2 class="text-3xl md:text-5xl font-['Lobster'] text-amber-400 mb-4">Impulsa tu Negocio</h2>
+<p class="text-lg md:text-xl text-white mb-6 text-center max-w-2xl">
+    Conecta con clientes, gana visibilidad y forma parte de la plataforma que mueve Talara. ¡Vende más con <span class="font-bold">Vive Talara</span>!
+</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Respaldo y Alianzas -->
+    <section id="respaldo" class="bg-white text-gray-800 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Nuestro Respaldo</h2>
+<p class="text-lg mb-8">
+<span class="font-['Lobster'] text-amber-400">Vive</span> <span class="font-['Lobster'] text-orange-500">Talara</span> cuenta con el respaldo de la <strong>Cámara de Comercio de Talara</strong> y ha sido reconocido por la <strong>Subgerencia de Turismo</strong> como <em>aliado estratégico del turismo local</em>. Juntos impulsamos el desarrollo, conectamos a la comunidad y fortalecemos el crecimiento de nuestra provincia.
+</p>
+
+            <div class="flex justify-center space-x-8">
+                <img src="assets/img/1.png" alt="Logo de Cámara de Comercio de Talara" class="h-12 hover:scale-110 transition-transform">
+                <img src="assets/img/2.png" alt="Logo de Subgerencia de Turismo de Talara" class="h-12 hover:scale-110 transition-transform">
+            </div>
+        </div>
+    </section>
+
+    <!-- Temporizador -->
+    <section id="countdown" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¡<span class="font-['Lobster'] text-amber-400">Vive</span> <span class="font-['Lobster'] text-orange-500">Talara</span> Está por Llegar!</h2>
+<p class="text-lg mb-8">El 29 de mayo de 2025, Talara se transforma. ¡Prepárate para ser parte de este gran cambio!</p>
+
+            <div class="flex justify-center space-x-4" id="countdown-timer">
+                <div class="bg-orange-500 rounded-lg p-4">
+                    <span id="days" class="text-4xl font-['Poppins']">00</span>
+                    <p>Días</p>
+                </div>
+                <div class="bg-orange-500 rounded-lg p-4">
+                    <span id="hours" class="text-4xl font-['Poppins']">00</span>
+                    <p>Horas</p>
+                </div>
+                <div class="bg-orange-500 rounded-lg p-4">
+                    <span id="minutes" class="text-4xl font-['Poppins']">00</span>
+                    <p>Minutos</p>
+                </div>
+                <div class="bg-orange-500 rounded-lg p-4">
+                    <span id="seconds" class="text-4xl font-['Poppins']">00</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qué Hacer -->
+    <section id="que-hacer" class="bg-white text-gray-800 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¡La Agenda de Negocios Más Grande de Talara Está Aquí!</h2>
+<p class="text-lg mb-8">En la sección "Qué Hacer", descubrirás experiencias únicas que no solo destacan la esencia de Talara, sino que también impulsan a todos los negocios de nuestra provincia. ¡Únete y haz crecer tu negocio con nosotros!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="p-6 rounded-lg text-white hover:scale-105 transition-transform" style="background-color: #dc2626;">
+                    <i class="fas fa-utensils text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Gastronomía</h3>
+                    <p>Platos típicos y restaurantes únicos.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 transition-transform" style="background-color: #2563eb;">
+                    <i class="fas fa-hotel text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Alojamiento</h3>
+                    <p>Hoteles y hostales para tu comodidad.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 transition-transform" style="background-color: #16a34a;">
+                    <i class="fas fa-bus text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Transporte</h3>
+                    <p>Movilidad fácil y accesible.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 transition-transform" style="background-color: #9333ea;">
+                    <i class="fas fa-shopping-bag text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Compras</h3>
+                    <p>Mercados y artesanías locales.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 transition-transform" style="background-color: #ca8a04;">
+                    <i class="fas fa-hiking text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Tours</h3>
+                    <p>Aventuras y excursiones guiadas.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 transition-transform" style="background-color: #0d9488;">
+                    <i class="fas fa-spa text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Bienestar</h3>
+                    <p>Spas y relajación total.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 transition-transform" style="background-color: #ea580c;">
+                    <i class="fas fa-theater-masks text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Cultura</h3>
+                    <p>Museos, ferias y vida nocturna.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 transition-transform" style="background-color: #4b5563;">
+                    <i class="fas fa-tools text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Servicios Útiles</h3>
+                    <p>Todo lo que necesitas para tu visita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tu Negocio en Travel -->
+    <section id="travel" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto flex flex-col items-center">
+            <h2 class="text-5xl md:text-6xl font-['Lobster'] mb-4">¡Tu Negocio en Travel, Gratis!</h2>
+<h3 class="text-xl md:text-2xl mb-6 flex items-center">
+    <i class="fas fa-star text-white mr-2"></i> ¡Únete al movimiento que está transformando Talara!
+</h3>
+<div class="max-w-3xl space-y-6 mb-8">
+    <div class="bg-white text-gray-800 p-6 rounded-lg hover:border-amber-400 hover:border-2 transition-all">
+        <p class="text-lg font-bold">¿Tienes un negocio en Talara? ¡Este es tu momento para brillar!</p>
+    </div>
+    <div class="bg-white text-gray-800 p-6 rounded-lg hover:border-amber-400 hover:border-2 transition-all">
+        <p class="text-lg italic">Súmate a la sección <strong>“Qué Hacer”</strong> de <span class="font-['Lobster'] text-amber-400">Vive</span> <span class="font-['Lobster'] text-orange-500">Talara</span> y expón tu negocio al mundo, ¡totalmente gratis!</p>
+    </div>
+    <div class="bg-white text-gray-800 p-6 rounded-lg hover:border-amber-400 hover:border-2 transition-all">
+        <p class="text-lg border-b-2 border-dotted border-amber-400">Sé parte de una comunidad que apoya el turismo, fomenta lo local y conecta tu negocio con miles de visitantes.</p>
+    </div>
+</div>
+            <a href="negocios.html" class="bg-orange-500 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-amber-400 transition-colors">¡Regístrate Gratis!</a>
+        </div>
+    </section>
+
+    <!-- Turismo -->
+    <section id="turismo" class="bg-white text-gray-800 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Descubre Todos los Recursos Turísticos de Talara!</h2>
+<p class="text-lg mb-8">En nuestra sección de turismo, encontrarás todos los recursos turísticos de Talara: desde sus distritos, historia, hasta las experiencias que nos hacen únicos. ¡Recorre y explora cada rincón de nuestra hermosa tierra!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="p-6 rounded-lg text-white hover:scale-105 hover:border-2 hover:border-white/50 transition-transform" style="background-color: #3b82f6;">
+                    <i class="fas fa-monument text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">La Brea</h3>
+                    <p>Historia y paisajes únicos.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 hover:border-2 hover:border-white/50 transition-transform" style="background-color: #f97316;">
+                    <i class="fas fa-dungeon text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Pariñas</h3>
+                    <p>Reservas naturales y más.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 hover:border-2 hover:border-white/50 transition-transform" style="background-color: #06b6d4;">
+                    <i class="fas fa-water text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Lobitos</h3>
+                    <p>Playas y arquitectura histórica.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 hover:border-2 hover:border-white/50 transition-transform" style="background-color: #8b5cf6;">
+                    <i class="fas fa-sailboat text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">El Alto</h3>
+                    <p>Aventuras marítimas.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 hover:border-2 hover:border-white/50 transition-transform" style="background-color: #f59e0b;">
+                    <i class="fas fa-fish text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Los Órganos</h3>
+                    <p>Vida marina y relax.</p>
+                </div>
+                <div class="p-6 rounded-lg text-white hover:scale-105 hover:border-2 hover:border-white/50 transition-transform" style="background-color: #22c55e;">
+                    <i class="fas fa-umbrella-beach text-3xl mb-2 text-white"></i>
+                    <h3 class="text-xl font-semibold mb-2">Máncora</h3>
+                    <p>Playas y surf de clase mundial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vive Talara -->
+    <section id="talara" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-['Lobster'] mb-4 text-orange-500">Talara</h2>
+<p class="text-2xl md:text-3xl mb-8">Capital Regional del Turismo de Sol y Playa</p>
+<p class="text-lg">Talara lidera el turismo regional, ocupando el primer lugar y el tercer puesto a nivel nacional. Con nuestra app <span class="font-['Lobster'] text-amber-400">Vive</span> <span class="font-['Lobster'] text-orange-500">Talara</span>, conectamos visitantes y negocios, celebrando lo mejor de nuestra tierra.</p>
+
+        </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos" class="bg-orange-500 text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Talara Vibra con Vida!</h2>
+<p class="text-lg mb-6">Descubre en la sección de eventos de nuestra app los principales eventos turísticos y culturales organizados por la Municipalidad, que unen a la comunidad, atraen a turistas y apoyan a los negocios locales.</p>
+
+            </div>
+            <div>
+                <img src="assets/img/eventos.png" alt="Captura de eventos en la app Vive Talara" class="rounded-lg mx-auto hover:scale-105 transition-transform">
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendario -->
+    <section id="calendario" class="bg-gray-500 text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="assets/img/calendario.png" alt="Captura del calendario en la app Vive Talara" class="rounded-lg mx-auto hover:scale-110 transition-transform">
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Las Fiestas de Talara Nos Unen!</h2>
+<p class="text-lg mb-6">Consulta en el calendario de nuestra app las festividades y celebraciones que nos unen como comunidad, permitiendo que todos disfruten de nuestra cultura y apoyen a los negocios locales.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Sabías Qué...? -->
+    <section id="sabiasTEM QUE...? -->
+    <section id="sabias-que" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Descubre Talara!</h2>
+<p class="text-lg mb-6">Explora historias y personajes históricos de Talara en nuestra sección "Sabías que", ¡y pon a prueba tus conocimientos con un quiz al final de cada relato!</p>
+
+            </div>
+            <div>
+                <img src="assets/img/sabias.png" alt="Captura de la sección ¿Sabías Qué...? en la app Vive Talara" class="rounded-lg mx-auto hover:scale-105 transition-transform">
+            </div>
+        </div>
+    </section>
+
+    <!-- Favoritos -->
+    <section id="favoritos" class="bg-white text-gray-800 py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="flex justify-center">
+                <img src="assets/img/favoritos.png" alt="Captura de la sección Favoritos en la app Vive Talara" class="rounded-lg hover:scale-105 transition-transform">
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Guarda tus Favoritos de Talara!</h2>
+<p class="text-lg mb-6">En la sección "Favoritos" podrás personalizar tu experiencia guardando tus lugares y eventos preferidos, conectando con nuestra comunidad y apoyando a los negocios locales.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tienda Virtual -->
+    <section id="shop" class="bg-orange-500 text-white py-16">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="text-center max-w-3xl">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+    ¡Lleva <span class="font-['Lobster']">Talara</span> Contigo!
+</h2>
+<p class="text-lg mb-8">En la sección <strong>Shop</strong> de nuestra app, encontrarás productos exclusivos como playeras, gorras, bolsos y mucho más. Lleva contigo el orgullo talareño y apoya nuestra identidad local.</p>
+
+            </div>
+            <div class="mt-8 w-full max-w-5xl shop-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/1.jpg" alt="Playera oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Playera Vive Talara</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/2.jpg" alt="Gorra oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Gorra Vive Talara</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/3.jpg" alt="Crop top oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Bolso Vive Talara</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/4.jpg" alt="Crop top oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Diseños Exclusivos</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/5.jpg" alt="Crop top oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">X Distrito</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/6.jpg" alt="Crop top oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Identidad</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/7.jpg" alt="Crop top oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Orgullo</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/8.jpg" alt="Crop top oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Para ti</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/9.jpg" alt="Crop top oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Solo aquí</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/10.jpg" alt="Crop top oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Store Vive Talara</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm hover:scale-105 transition-transform">
+                            <img src="assets/img/store/11.jpg" alt="Crop top oficial de Vive Talara" class="w-full h-64 object-contain mb-4">
+                            <p class="text-gray-800 font-semibold text-lg">Muy Pronto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev" role="button" aria-label="Diapositiva anterior"></div>
+                <div class="swiper-button-next" role="button" aria-label="Siguiente diapositiva"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promos Exclusivas -->
+    <section id="promos" class="bg-white text-gray-800 py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Promos que Enamoran!</h2>
+<p class="text-lg mb-6">En la sección <strong>Promos</strong>, los negocios aliados pueden lanzar sus mejores ofertas. Disfruta de descuentos exclusivos que conectan a nuestra comunidad con las mejores experiencias de Talara.</p>
+
+            </div>
+            <div class="flex justify-center">
+                <img src="assets/img/promo.png" alt="Captura de promociones en la app Vive Talara" class="rounded-lg hover:scale-105 transition-transform">
+            </div>
+        </div>
+    </section>
+
+    <!-- Membresía VIP -->
+    <section id="vip" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Vive Talara al Máximo con VIP!</h2>
+<p class="text-lg mb-6">Accede a experiencias exclusivas con la sección <strong>VIP</strong>, diseñada para quienes desean disfrutar de lo mejor de Talara con beneficios especiales y una conexión más cercana con nuestra comunidad.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white text-gray-800 p-6 rounded-lg border-2 border-amber-400 hover:scale-105 transition-transform">
+                    <i class="fas fa-gem text-3xl mb-2 text-orange-500"></i>
+                    <h3 class="text-xl font-semibold mb-2">Promociones Exclusivas</h3>
+                    <p>Descuentos únicos en negocios aliados.</p>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg border-2 border-amber-400 hover:scale-105 transition-transform">
+                    <i class="fas fa-trophy text-3xl mb-2 text-orange-500"></i>
+                    <h3 class="text-xl font-semibold mb-2">Sorteos Mensuales</h3>
+                    <p>Gana smartphones y premios increíbles.</p>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg border-2 border-amber-400 hover:scale-105 transition-transform">
+                    <i class="fas fa-ticket-alt text-3xl mb-2 text-orange-500"></i>
+                    <h3 class="text-xl font-semibold mb-2">Tarjeta de Fidelidad</h3>
+                    <p>Completa 10 consumos para premios VIP.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Embajadores -->
+    <section id="embajadores" class="bg-white text-gray-800 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Conviértete en Embajador de Talara!</h2>
+<p class="text-lg mb-8">Si sientes el orgullo talareño, ¡hazte embajador del turismo en Talara! Al unirte como negocio aliado, conectas nuestra comunidad con el mundo y destacas lo mejor de nuestros negocios y tradiciones.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-orange-500 text-white p-6 rounded-lg border-2 border-amber-400 hover:scale-105 transition-transform">
+                    <h3 class="text-xl font-semibold mb-2">Eventos Destacados</h3>
+                    <p>Promoción de tus eventos en la app.</p>
+                </div>
+                <div class="bg-orange-500 text-white p-6 rounded-lg border-2 border-amber-400 hover:scale-105 transition-transform">
+                    <h3 class="text-xl font-semibold mb-2">Difusión en Redes</h3>
+                    <p>Tus flyers en nuestras redes oficiales.</p>
+                </div>
+                <div class="bg-orange-500 text-white p-6 rounded-lg border-2 border-amber-400 hover:scale-105 transition-transform">
+                    <h3 class="text-xl font-semibold mb-2">Visibilidad</h3>
+                    <p>Logos en banners de eventos.</p>
+                </div>
+            </div>
+            <a href="negocios.html" class="bg-amber-400 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-orange-500 transition-colors" aria-label="Convertirse en embajador">¡Sé Embajador!</a>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="bg-orange-500 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-['Lobster'] mb-6">¡Vive Talara Llega Pronto!</h2>
+            <p class="text-lg mb-8">El 29 de mayo 2025, nuestra app estará lista para llevar Talara al mundo.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-2xl font-['Lobster'] mb-2">
+                <span class="text-amber-400">Vive</span> <span class="text-orange-500">Talara</span>
+            </h1>
+            <p>Con el respaldo de la Cámara de Comercio e Industrias de Talara y Turismo.</p>
+            <p class="mt-2">© 2025 <span class="font-['Lobster'] text-orange-500">Vive Talara</span>. Powered by <a href="https://manguitopmd.github.io/biolink/" target="_blank" class="text-orange-500 hover:underline" aria-label="Visitar Manguito Perú">Manguito Perú</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script defer src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>

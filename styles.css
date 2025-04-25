@@ -1,0 +1,119 @@
+/* Custom styles for Vive Talara */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-['Lobster'] {
+    font-family: 'Lobster', cursive;
+}
+
+/* Loader */
+#slider-loader {
+    transition: opacity 0.5s ease-out;
+}
+
+/* Navbar */
+nav {
+    transition: background-color 0.3s ease;
+}
+
+/* Hero Slider */
+.swiper {
+    height: 100vh;
+}
+
+.swiper-pagination-bullet {
+    background: #f59e0b !important;
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f59e0b !important;
+    opacity: 1;
+}
+
+/* Shop Carousel */
+#shop .shop-carousel {
+    position: relative;
+    padding: 20px 0;
+    max-width: 1280px;
+    overflow: hidden; /* Asegura que el carrusel no desborde */
+}
+
+#shop .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente las diapositivas */
+    opacity: 1; /* Asegura que las diapositivas sean visibles */
+}
+
+#shop .swiper-slide img {
+    width: 100%;
+    height: 16rem; /* 256px, ajustado para 1080x1080 manteniendo proporciones */
+    object-fit: contain;
+}
+
+#shop .swiper-button-prev,
+#shop .swiper-button-next {
+    color: #f59e0b;
+    background: rgba(255, 255, 255, 0.2);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+#shop .swiper-button-prev:hover,
+#shop .swiper-button-next:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#shop .swiper-button-prev::after,
+#shop .swiper-button-next::after {
+    font-size: 24px;
+}
+
+#shop .swiper-pagination-bullet {
+    background: #f59e0b;
+    opacity: 0.7;
+    width: 10px;
+    height: 10px;
+}
+
+#shop .swiper-pagination-bullet-active {
+    background: #f59e0b;
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .swiper h1 {
+        font-size: 2.5rem;
+    }
+
+    .swiper h2 {
+        font-size: 1.8rem;
+    }
+
+    .swiper p {
+        font-size: 1rem;
+    }
+
+    #shop h2 {
+        font-size: 2.5rem;
+    }
+
+    #shop p {
+        font-size: 1rem;
+    }
+
+    #shop .swiper-slide img {
+        height: 12rem; /* 192px para móvil */
+    }
+}
+
+@media (min-width: 1024px) {
+    #shop .swiper-slide img {
+        height: 18rem; /* 288px para desktop */
+    }
+}

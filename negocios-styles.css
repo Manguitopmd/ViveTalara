@@ -1,0 +1,66 @@
+/* Custom styles for Negocios - Vive Talara */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.lobster-font {
+    font-family: 'Lobster', cursive;
+}
+
+/* Navbar */
+nav {
+    transition: background-color 0.3s ease;
+}
+
+/* Respaldo Section */
+#respaldo {
+    position: relative;
+    background-color: #ffffff; /* Fondo blanco explícito */
+}
+
+#respaldo .container {
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+}
+
+/* CTA Buttons */
+.cta-button {
+    background-color: #f97316;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #f59e0b;
+    transform: scale(1.05);
+}
+
+/* Cards */
+#retos .grid > div,
+#que-es .grid > div,
+#vendemas .grid > div,
+#eventos .grid > div,
+#embajadores .grid > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #respaldo h1 {
+        font-size: 2rem;
+    }
+
+    #respaldo p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #respaldo img {
+        height: 5rem;
+    }
+}
