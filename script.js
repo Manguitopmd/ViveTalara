@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Countdown
     try {
-        const countdownDate = new Date('May 29, 2025 00:00:00').getTime();
+        const countdownDate = new Date('Jun 29, 2025 00:00:00').getTime();
         const updateCountdown = () => {
             try {
                 const now = new Date().getTime();
